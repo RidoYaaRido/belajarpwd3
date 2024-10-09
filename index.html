@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Warung Dofood</title>
+    <link rel="stylesheet" href="css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class='header'>
+        <img src="image/dofood.png" alt="Logo Dofood" class='logo'>
+        <div class='header-text'>
+            <h1><center>Selamat Datang di Dofood</center></h1>
+            <p>Nikmati Makanan yang berkualitas dan halal!</p>
+        </div>
+    </header> 
+    <section id="promo">
+        <h2>Promo Hari Ini</h2>
+        <p id="promoMessage">Klik tombol di bawah ini untuk melihat promo spesial hari ini.</p>
+        <button onclick="tampilkanPromo()">Lihat Promo</button>
+    </section>
+    <section id="menu">
+        <h2>Menu Makanan Favorit</h2>
+        <ul id="listmenu">
+            <!---->
+        </ul>
+        <button onclick="tampilkanMenu()">Tampilkan Menu</button>
+    </section>
+    <section id="order">
+        <h2>Pesan Makan</h2>
+        <p>Pilih Menu dan masukan jumlah pesanan:</p>
+        <label for="pilihanMenu">Menu Seblak:</label>
+        <select id="pilihanMenu">
+        </select><br><br>
+        <label for="inputJumlah">jumlah:</label>
+        <input type="number" id="inputJumlah" placeholder="Jumlah pesanan"><br><br>
+        <button onclick="cekPesanan()">Pesan Sekarang</button>
+        <p id="hasilPesanan"></p>
+        <p id="totalBayar"></p>
+
+        <h3>Pembayaran</h3>
+        <label for="uangBayar">Jumlah uang dibayar</label>
+        <input type="number" id="uangBayar" placeholder="Masukan Jumlah"><br><br>
+        <button onclick="hitungKembalian()">Hitung Kembalian</button>
+        <p id="hasilKembalian"></p>
+    </section>
+    <footer>
+        <div>
+        <p>&copy;2024 dofood. Semua hak dilindungi</p>
+        <p>Follow Me</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/rdrhakiem" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://wa.me/6281319357119" target="_blank">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="30" height="30">
+            </a>
+            <a href="https://telegram.com/Dorarem9n" target="_blank">
+                <i class="fab fa-telegram"></i>
+            </a>
+        </div>
+    </div>
+    </footer>
+</body>
+</html>
